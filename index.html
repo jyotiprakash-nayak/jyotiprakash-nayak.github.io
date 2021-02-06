@@ -1,1 +1,55 @@
-"1st Page" 
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<script> 
+function validate_textarea(){
+var x=document.getElementById("commtextarea").value;
+// var x=document.tarea.value;
+
+if (x == null || x == '' || x.indexOf('\n') > 0)
+{
+   alert ("Please enter something in the box ???");
+}
+}
+</script>
+</head>
+
+<body>
+<form name="myforms" action="oriya_program.php" onsubmit="validate_textarea();" method="post">
+<table width="1000" border="0">
+<tr>
+<td colspan="2" style="background-color:#FBA500;">
+<h1 style="text-align:center">Welcome To My Home Page</h1>
+<!--<h1><marquee behavior="alternate">Destiny</marquee></h1>>-->
+</td>
+</tr>
+
+<tr valign="top">
+<td style="background-color:#FED700;width:100px;text-align:top;">
+<ul>
+<li><a href="">My Learnings</a></li>
+</ul>
+Home<br />
+<a href="../.../allfiles/quotes.html">Quotes</a> <br />
+Help<br />
+About Me
+</td>
+<td style="background-color:#EEEEEE;height:200px;width:400px;text-align:top;">
+ <br />
+
+<p><textarea id="commtextarea" name="tarea" ROWS=15 COLS=40> </textarea>  </p>
+<p><input type="submit" name="submit1" title="Feedback" value="submit" /> </p>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="background-color:#FFA500;text-align:center;">
+Copyright © 2021 ABC Learning Labs</td>
+</tr>
+</table>
+
+
+
+</form>
+</body>
+</html>
